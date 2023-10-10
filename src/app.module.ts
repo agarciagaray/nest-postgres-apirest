@@ -22,6 +22,17 @@ import { UsersModule } from './users/users.module';
       database: process.env.POSTGRES_DATABASE,
       autoLoadEntities: true,
       synchronize: true,
+      //Esta parte es solo para cuando se hace el despliegue no para el desarrollo
+      ssl: process.env.POSTGRES_SSL === "true",
+      extra: {
+        ssl:
+          process.env.POSTGRES_SSL === "true"
+            ? {
+                rejectUnauthorized: false,
+              }
+            : null,
+      },
+      // Hasta acá el código para el despliegue.
     }),
     CatsModule,
     BreedsModule,
