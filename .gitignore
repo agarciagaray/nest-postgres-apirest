@@ -5,6 +5,7 @@ mysql
 postgres
 
 .env
+Datos_DB_Nube.txt
 
 # Logs
 logs

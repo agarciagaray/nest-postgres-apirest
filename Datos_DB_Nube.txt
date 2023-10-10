@@ -5,3 +5,10 @@ Username twitch_nest_postgres_4xtk_user
 Password M25ui7qxd2GFei7R6QKHubKZ24V0JUfR
 
 postgres://twitch_nest_postgres_4xtk_user:M25ui7qxd2GFei7R6QKHubKZ24V0JUfR@dpg-ckipkoglk5ic73d45cr0-a.oregon-postgres.render.com/twitch_nest_postgres_4xtk
+
+POSTGRES_HOST="localhost"
+POSTGRES_PORT=5436
+POSTGRES_USERNAME="postgres"
+POSTGRES_PASSWORD="postgres"
+POSTGRES_DATABASE="db_crud"
+POSTGRES_SSL="false"
